@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watcher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Watcher</h5>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <button id="tab" class="btn btn-danger mx-auto">Analisar esta guia</button>
+                          </div>
+                          <div class="col">
+                            <button id="opendiv" onclick="SpecificURL()" class="btn btn-danger mx-auto">Analisar URL especifica</button>
+                          </div>
+                        </div>
+                    <p></p>
+                    <div class="card-body" style="display: none;" id="specURL">
+                        <div class="input-group mb-3">
+                            <input id="linkurl" type="text" class="form-control" placeholder="URL a ser analisada" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="url">OK</button>
+                            </div>
+                            </div>
+                    </div>
+                    <p></p>
+                    <h6 class="card-subtitle mb-2 text-muted">Link:</h6>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" id="link"></p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <h6 class="card-subtitle mb-2 text-muted">Resultado:</h6>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" id="result"></p>
+                        </div>
+                    </div>                     
+                </div>
+              </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
